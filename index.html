@@ -26,7 +26,7 @@
         <p>Marketing Agency</p>
       </div>
 
-      <nav class="navbar">
+      <nav class="navbar" id="navMenu">
         <a class="active" href="#home">Home</a>
         <a class="#" href="#services">Services</a>
         <!-- <a href="#">Portfolio</a> -->
@@ -36,14 +36,26 @@
       </nav>
 
       <button class="btn-primary">
-        <i class="fa-solid fa-calendar-check"></i><a id="arrow" href="#contact"> Book Free Consultation</a>
+        <i class="fa-solid fa-calendar-check"></i
+        ><a id="arrow" href="#contact"> Book Free Consultation</a>
       </button>
 
       <!-- Mobile Menu Icon -->
-      <div class="menu-toggle" id="menuToggle">
+      <div class="menu-toggle" id="menuToggle" onclick="openMenu()" >
         <i class="fa-solid fa-bars"></i>
       </div>
+
+     
     </header>
+    
+      <!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="closeMenu()">✖</div>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#">About</a>
+  <a href="#contact">Contact</a>
+</div>
 
     <!-- HERO SECTION -->
     <section id="home">
@@ -53,12 +65,13 @@
         <p>
           <strong>AIDERS Marketing Agency</strong>, Certified Digital Marketing
           Agency in Peshawar, Pakistan. We Will Increase Your ROI And Lead Your
-          Business To Success. Arham Solutions Your only Trusted Partner for
+          Business To Success. <strong>AIDERZ</strong> Marketing Agency Your only Trusted Partner for
           E-Commerce Growth.
         </p>
 
         <button class="btn-secondary">
-          <a id="arrow" href="#contact">Get Free Audit</a> <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          <a id="arrow" href="#contact">Get Free Audit</a>
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
         </button>
 
         <div class="trusted">
@@ -79,7 +92,7 @@
           efficient, innovative marketing strategies that are both affordable
           and powerful, ensuring your business’s success. We are not just a
           service provider; we are your partner in creating a success story. Let
-          us help you grow your brand. Book a consultation with Arham Solutions,
+          us help you grow your brand. Book a consultation with <strong>AIDERZ</strong> Marketing Agency,
           the Best Marketing Agency in Peshawar, and start making your vision a
           reality today!
         </p>
@@ -259,9 +272,9 @@
       </div>
     </section>
     <!-- WhatsApp Button -->
-<a href="https://wa.me/923340012726" target="_blank" class="whatsapp-btn">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+    <a href="https://wa.me/923340012726" target="_blank" class="whatsapp-btn">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <footer class="footer">
       <div class="footer-container">
@@ -319,5 +332,14 @@
         <a href="#home"><i id="arrow" class="fa-solid fa-arrow-up"></i></a>
       </button>
     </footer>
+    <script>
+  function openMenu(){
+  document.getElementById("sidebar").classList.add("active");
+}
+
+function closeMenu(){
+  document.getElementById("sidebar").classList.remove("active");
+}
+</script>
   </body>
 </html>

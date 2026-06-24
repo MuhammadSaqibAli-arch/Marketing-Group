@@ -26,10 +26,11 @@ body {
 /* LOGO */
 .logo h2 {
   color: purple;
-  text-shadow:0 0 5px #fff,
+  text-shadow:
+    0 0 5px #fff,
     0 0 10px #a855f7,
     0 0 20px #a855f7,
-    0 0 40px #9333ea;;
+    0 0 40px #9333ea;
 }
 .logo span {
   color: orange;
@@ -68,20 +69,19 @@ body {
   border-radius: 25px;
   font-size: 14px;
   cursor: pointer;
-  text-shadow: 0 0 5px #fff,
+  text-shadow:
+    0 0 5px #fff,
     0 0 6px #a855f7,
     0 0 12px #a855f7,
     0 0 20px #9333ea;
 }
 
-
-
 .btn-primary i {
   margin-right: 5px;
 }
-.btn-primary:hover{
-   background-color: orange;
-  color:black;
+.btn-primary:hover {
+  background-color: orange;
+  color: black;
   transition: 0.4s;
 }
 
@@ -121,7 +121,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-.btn-secondary:hover{
+.btn-secondary:hover {
   background-color: purple;
   color: white;
   transition: 0.4s;
@@ -214,7 +214,7 @@ body {
   background: orange;
   border: none;
   padding: 9px 17px;
- 
+
   border-radius: 20px;
   color: white;
   cursor: pointer;
@@ -225,7 +225,7 @@ body {
 .card button i {
   margin-left: 5px;
   font-size: 14px;
-   text-align: center;
+  text-align: center;
   justify-content: center;
 }
 .footer {
@@ -316,13 +316,13 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
-.social-icons i:hover{
-  background-color: #087BB7;
+.social-icons i:hover {
+  background-color: #087bb7;
   color: white;
 }
-.social-icons #inst:hover{
+.social-icons #inst:hover {
   color: white;
-  background: linear-gradient(135deg, #8749B5, #D02299);
+  background: linear-gradient(135deg, #8749b5, #d02299);
 }
 
 /* BACK TO TOP */
@@ -338,7 +338,7 @@ body {
   width: max-content;
   cursor: pointer;
 }
-#arrow{
+#arrow {
   color: white;
   text-decoration: none;
 }
@@ -439,7 +439,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
-.btn:hover{
+.btn:hover {
   color: black;
   background-color: orange;
 }
@@ -451,7 +451,7 @@ body {
   width: 60px;
   height: 60px;
 
-  background: #25D366; /* WhatsApp green */
+  background: #25d366; /* WhatsApp green */
   color: white;
 
   display: flex;
@@ -462,7 +462,7 @@ body {
   border-radius: 50%;
 
   text-decoration: none;
-  box-shadow: 0 14px 15px #1ebe5d ;
+  box-shadow: 0 14px 15px #1ebe5d;
 
   z-index: 1000;
   transition: 0.3s;
@@ -488,10 +488,52 @@ body {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+/* #cross {
+  display: none;
+} */
 
+/* Sidebar */
+#sidebar{
+  display: none;
+}
+.sidebar{
+  position:fixed;
+  top:0;
+  right:-250px;   /* hide outside screen */
+  width:250px;
+  height:100%;
+  background-color:transparent;
+  backdrop-filter: blur(20px);
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  z-index: 1000;
+  transition:0.3s ease;
+}
 
+.sidebar a{
+  display: flex;
+  padding: 12px 0px;
+  margin-top: 18px;
+  border-bottom: 0.1px solid black;
+  text-align: start;
+  color:black;
+  text-decoration:none;
+  font-size:18px;
+}
 
+.close-btn{
+  font-size:22px;
+  color: black;
+  cursor:pointer;
+  align-self:flex-end;
+}
 
+/* Active Sidebar */
+.sidebar.active{
+  right:0;
+}
 
 
 /* ===================== */
@@ -508,29 +550,39 @@ body {
     gap: 15px;
   }
 
-  
   #hero h1 {
     font-size: 26px;
   }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-   .footer-container {
+  .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-  
-
   .menu-toggle {
     display: block;
+    padding: 20px;
+    cursor: pointer;
   }
-
+  .navbar{
+    display: none;
+  }
+/* 
+  #cross {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333;
+  } */
+ 
   .btn-primary {
     display: none;
   }
@@ -539,7 +591,6 @@ body {
     padding: 30px;
   }
 
-  
   #hero h1 {
     font-size: 25px;
   }
@@ -551,6 +602,7 @@ body {
   .btn-secondary {
     padding: 12px 20px;
   }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
@@ -558,7 +610,8 @@ body {
   .card {
     padding: 25px 15px;
   }
-   .footer-container {
+
+  .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -574,14 +627,18 @@ body {
   }
 
   .back-to-top {
-    right: 10px;
+    left: 10px;
     bottom: 10px;
   }
-   .contact-container {
+
+  .contact-container {
     flex-direction: column;
   }
 
   .contact-title {
     width: 90%;
+  }
+  #sidebar{
+    display:inline;
   }
 }
