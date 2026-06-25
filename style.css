@@ -501,9 +501,9 @@ body {
   top:0;
   right:-250px;   /* hide outside screen */
   width:250px;
-  height:100%;
+  height:max-content;
   background-color:transparent;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   padding:20px;
   display:flex;
   flex-direction:column;
@@ -516,7 +516,7 @@ body {
   display: flex;
   padding: 12px 0px;
   margin-top: 18px;
-  border-bottom: 0.1px solid black;
+  border-bottom: 0.1px solid purple;
   text-align: start;
   color:black;
   text-decoration:none;
