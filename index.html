@@ -3,23 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AIDERS Marketing Agency</title>
-    <link
-      rel="shortcut icon"
-      href="Icon/WhatsApp Image 2026-06-19 at 3.55.54 PM.jpeg"
-      type="image/x-icon"
-    />
-
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
+    <title>AIDERZ Marketing Agency – Peshawar</title>
+    <link rel="shortcut icon" href="Icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- HEADER -->
+
+    <!-- ========== HEADER ========== -->
     <header class="header">
       <div class="logo">
         <h2><span>A</span>IDERZ</h2>
@@ -27,319 +18,329 @@
       </div>
 
       <nav class="navbar" id="navMenu">
-        <a class="active" href="#home">Home</a>
-        <a class="#" href="#services">Services</a>
-        <!-- <a href="#">Portfolio</a> -->
-        <a class="#" href="#">About Us</a>
-        <!-- <a href="#">Blogs</a> -->
-        <a class="#" href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <button class="btn-primary">
-        <i class="fa-solid fa-calendar-check"></i
-        ><a id="arrow" href="#contact"> Book Free Consultation</a>
-      </button>
+      <a href="#contact" class="btn-primary">
+        <i class="fa-solid fa-calendar-check"></i>
+        Book Free Consultation
+      </a>
 
-      <!-- Mobile Menu Icon -->
-      <div class="menu-toggle" id="menuToggle" onclick="openMenu()" >
+      <div class="menu-toggle" id="menuToggle" onclick="openMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
-
-     
     </header>
-    
-      <!-- Sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="close-btn" onclick="closeMenu()">✖</div>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#">About</a>
-  <a href="#contact">Contact</a>
-</div>
 
-    <!-- HERO SECTION -->
+    <!-- ========== SIDEBAR ========== -->
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="closeMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <!-- ========== HERO ========== -->
     <section id="home">
       <div class="hero-content">
-        <h1>Looking For Best Marketing Agency in Peshawar.</h1>
+        <div class="hero-badge">
+          <i class="fa-solid fa-star"></i>
+          Best Marketing Agency in Peshawar
+        </div>
+
+        <h1>Grow Your Business With <span class="highlight">AIDERZ</span> Marketing Agency</h1>
 
         <p>
-          <strong>AIDERS Marketing Agency</strong>, Certified Digital Marketing
-          Agency in Peshawar, Pakistan. We Will Increase Your ROI And Lead Your
-          Business To Success. <strong>AIDERZ</strong> Marketing Agency Your only Trusted Partner for
-          E-Commerce Growth.
+          Certified Digital Marketing Agency in Peshawar, Pakistan.
+          We increase your ROI through <strong>Digital Marketing, SEO,
+          Graphic Design, Web Development, Photography</strong> and
+          <strong>Video Production</strong>.
         </p>
 
-        <button class="btn-secondary">
-          <a id="arrow" href="#contact">Get Free Audit</a>
-          <i class="fa-solid fa-arrow-right-to-bracket"></i>
-        </button>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-secondary">
+            Get Free Audit <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#services" class="btn-outline">
+            Our Services
+          </a>
+        </div>
 
         <div class="trusted">
-          <img
-            src="Icon/WhatsApp Image 2026-06-23 at 2.59.58 PM.jpeg"
-            alt="user"
-          />
-          <span>Trusted by many peoples around the globe</span>
+          <img src="Icon/WhatsApp Image 2026-06-23 at 2.59.58 PM.jpeg" alt="Trusted Clients" loading="lazy" />
+          <span>Trusted by businesses around the globe</span>
         </div>
       </div>
     </section>
+
+    <!-- ========== SERVICES ========== -->
     <section id="services">
       <div class="container">
-        <h2>Our Services</h2>
-
-        <p class="description">
-          <strong>AIDERZ Marketing Agency</strong>, specialized in developing
-          efficient, innovative marketing strategies that are both affordable
-          and powerful, ensuring your business’s success. We are not just a
-          service provider; we are your partner in creating a success story. Let
-          us help you grow your brand. Book a consultation with <strong>AIDERZ</strong> Marketing Agency,
-          the Best Marketing Agency in Peshawar, and start making your vision a
-          reality today!
-        </p>
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h2>Our Services</h2>
+          <p class="description">
+            AIDERZ specializes in developing innovative, affordable marketing strategies
+            that help your business scale and grow. We are not just a service provider —
+            we are your growth partner.
+          </p>
+        </div>
 
         <div class="services-grid">
-          <!-- 1 -->
           <div class="card">
-            <i class="fa-solid fa-pen-nib"></i>
+            <div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div>
             <h3>Graphic Designing</h3>
-            <p>
-              Create stunning visuals, branding, and creative designs to grow
-              your business identity.
-            </p>
-            <button>Contact Us</button>
+            <p>Stunning visuals, branding and creative identity design to grow your business.</p>
+            <a href="#contact" class="card-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
-          <!-- 2 -->
           <div class="card">
-            <i class="fa-solid fa-camera"></i>
+            <div class="card-icon"><i class="fa-solid fa-camera"></i></div>
             <h3>Photography</h3>
-            <p>
-              Professional photography services for products, brands, and
-              events.
-            </p>
-            <button>Contact Us</button>
+            <p>Professional photography for products, brands and events.</p>
+            <a href="#contact" class="card-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
-          <!-- 3 -->
           <div class="card">
-            <i class="fa-solid fa-video"></i>
+            <div class="card-icon"><i class="fa-solid fa-video"></i></div>
             <h3>Videography</h3>
-            <p>
-              High-quality video production to showcase your brand and tell your
-              story.
-            </p>
-            <button>Contact Us</button>
+            <p>High-quality video production to showcase your brand story.</p>
+            <a href="#contact" class="card-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
-          <!-- 4 -->
           <div class="card">
-            <i class="fa-solid fa-film"></i>
+            <div class="card-icon"><i class="fa-solid fa-film"></i></div>
             <h3>Video Editing</h3>
-            <p>
-              Professional editing to make your videos engaging and impactful.
-            </p>
-            <button>Contact Us</button>
+            <p>Engaging edits for social media, ads, and brand content.</p>
+            <a href="#contact" class="card-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
-          <!-- 5 -->
           <div class="card">
-            <i class="fa-solid fa-code"></i>
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
             <h3>Web Development</h3>
-            <p>Modern and responsive websites to grow your online presence.</p>
-            <button>Contact Us</button>
+            <p>Modern, responsive websites to grow your online presence.</p>
+            <a href="#contact" class="card-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
-          <!-- 6 -->
           <div class="card">
-            <i class="fa-solid fa-chart-line"></i>
+            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
             <h3>SEO</h3>
-            <p>
-              Optimize your website to rank higher and get more organic traffic.
-            </p>
-            <button>Contact Us</button>
+            <p>Rank higher on Google and get more organic traffic to your site.</p>
+            <a href="#contact" class="card-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ========== WHY US ========== -->
+    <section id="about" class="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2>Your Trusted Growth Partner</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <i class="fa-solid fa-trophy"></i>
+            <h4>Result Oriented</h4>
+            <p>We focus on real results — more leads, more sales, more growth for your business.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h4>Trusted Partner</h4>
+            <p>We work as an extension of your team, fully committed to your success.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h4>Fast Delivery</h4>
+            <p>Quick turnaround without compromising on quality or creativity.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-tags"></i>
+            <h4>Affordable Pricing</h4>
+            <p>Premium services at prices that work for businesses of all sizes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
     <section id="contact">
-      <h2 class="contact-title">Contact Us</h2>
-
-      <div class="contact-container">
-        <!-- LEFT SIDE -->
-        <div class="contact-info">
-          <div class="info-box">
-            <i class="fa-solid fa-phone"></i>
-            <h4>Call Us Today</h4>
-            <p>0370 1592952</p>
-          </div>
-
-          <div class="info-box">
-            <i class="fa-solid fa-envelope"></i>
-            <h4>Send a message</h4>
-            <p>aiderz.agency@gmail.com</p>
-          </div>
-
-          <div class="info-box">
-            <i class="fa-solid fa-location-dot"></i>
-            <h4>Address</h4>
-            <p>Hamza Colony Peshawar Pakistan</p>
-          </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Contact Us</h2>
+          <p class="description">Ready to grow your business? Let's talk. Book a free consultation today.</p>
         </div>
 
-        <!-- RIGHT SIDE -->
-        <div class="contact-form">
-          <h3>Book Our Free Consultation</h3>
-          <p class="desc">
-            We'd love to hear from you! Feel free to drop us a line.
-          </p>
-
-          <form>
-            <div class="input-group">
-              <label>Name *</label>
-              <input type="text" required />
+        <div class="contact-container">
+          <!-- LEFT -->
+          <div class="contact-info">
+            <div class="info-box">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Call Us Today</h4>
+                <p>0370 1592952</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Us</h4>
+                <p>aiderz.agency@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Our Address</h4>
+                <p>Hamza Colony, Peshawar, Pakistan</p>
+              </div>
             </div>
 
-            <div class="input-group">
-              <label>Email *</label>
-              <input type="email" required />
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://wa.me/923340012726" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
+          </div>
 
-            <div class="input-group">
-              <label>Enter Your Website URL *</label>
-              <input type="text" />
-            </div>
+          <!-- RIGHT -->
+          <div class="contact-form">
+            <h3>Book Free Consultation</h3>
+            <p class="desc">We'd love to hear from you. Fill out the form and we'll get back to you shortly.</p>
 
-            <div class="input-group">
-              <label>Enter Your Whatsapp Number *</label>
-              <input type="text" placeholder="0301 2345678" />
-            </div>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="input-group">
+                  <label>Full Name *</label>
+                  <input type="text" placeholder="Your full name" required />
+                </div>
+                <div class="input-group">
+                  <label>Email Address *</label>
+                  <input type="email" placeholder="your@email.com" required />
+                </div>
+              </div>
 
-            <div class="input-group">
-              <label>Country *</label>
-              <select>
-                <option disabled selected>Select Your Country</option>
-                <option>Pakistan</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label>City *</label>
-              <select>
-                <option disabled selected>Select Your City</option>
-                <option>Karachi</option>
-                <option>Lahore</option>
-                <option>Islamabad</option>
-                <option>Rawalpindi</option>
-                <option>Peshawar</option>
-                <option>Quetta</option>
-                <option>Faisalabad</option>
-                <option>Multan</option>
-                <option>Hyderabad</option>
-                <option>Sialkot</option>
-                <option>Gujranwala</option>
-                <option>Sargodha</option>
-                <option>Bahawalpur</option>
-                <option>Abbottabad</option>
-                <option>Sukkur</option>
-                <option>Larkana</option>
-                <option>Mardan</option>
-                <option>Gujrat</option>
-                <option>Sheikhupura</option>
-                <option>Jhelum</option>
-              </select>
-            </div>
+              <div class="form-row">
+                <div class="input-group">
+                  <label>WhatsApp Number *</label>
+                  <input type="text" placeholder="0301 2345678" required />
+                </div>
+                <div class="input-group">
+                  <label>Website URL</label>
+                  <input type="text" placeholder="www.yoursite.com" />
+                </div>
+              </div>
 
-            <div class="input-group">
-              <label>Select Your Desire Service *</label>
-              <select>
-                <option disabled selected>--Select Option--</option>
-                <option>Graphic Designing</option>
-                <option>Photography</option>
-                <option>Videography</option>
-                <option>Video Editing</option>
-                <option>Web Development</option>
-                <option>SEO</option>
-              </select>
-            </div>
+              <div class="form-row">
+                <div class="input-group">
+                  <label>Country *</label>
+                  <select required>
+                    <option disabled selected>Select Country</option>
+                    <option>Pakistan</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label>City *</label>
+                  <select required>
+                    <option disabled selected>Select City</option>
+                    <option>Karachi</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                    <option>Rawalpindi</option>
+                    <option>Peshawar</option>
+                    <option>Quetta</option>
+                    <option>Faisalabad</option>
+                    <option>Multan</option>
+                    <option>Hyderabad</option>
+                    <option>Sialkot</option>
+                    <option>Gujranwala</option>
+                    <option>Abbottabad</option>
+                  </select>
+                </div>
+              </div>
 
-            <div class="input-group">
-              <label>Write Your Message/Inquiry *</label>
-              <textarea rows="4"></textarea>
-            </div>
+              <div class="input-group">
+                <label>Service Required *</label>
+                <select required>
+                  <option disabled selected>Select a Service</option>
+                  <option>Graphic Designing</option>
+                  <option>Photography</option>
+                  <option>Videography</option>
+                  <option>Video Editing</option>
+                  <option>Web Development</option>
+                  <option>SEO</option>
+                </select>
+              </div>
 
-            <button type="submit" class="btn">SUBMIT</button>
-          </form>
+              <div class="input-group">
+                <label>Your Message / Inquiry *</label>
+                <textarea rows="4" placeholder="Tell us about your project..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                Submit Request
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/923340012726" target="_blank" class="whatsapp-btn">
+
+    <!-- ========== WHATSAPP ========== -->
+    <a href="https://wa.me/923340012726" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 
+    <!-- ========== FOOTER ========== -->
     <footer class="footer">
       <div class="footer-container">
-        <!-- LEFT -->
         <div class="footer-col">
           <div class="logo">
             <h2><span>A</span>IDERZ</h2>
             <p>Marketing Agency</p>
           </div>
-
           <p class="footer-text">
-            AIDERZ Marketing Agency is a Result Oriented Best Marketing Agency
-            in Peshawar. Focused on Scaling E-Commerce Businesses. Our Goal is
-            to Grow and Increase Sales for E-Commerce Businesses Through
-            Facebook and Instagram Ads.
+            AIDERZ is a result-oriented digital marketing agency in Peshawar,
+            focused on scaling businesses through smart, affordable marketing strategies.
           </p>
         </div>
 
-        <!-- QUICK LINKS -->
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
             <li><a href="#contact">Book Consultation</a></li>
           </ul>
         </div>
 
-        <!-- CONTACT -->
         <div class="footer-col">
           <h3>Contact Us</h3>
-          <p>
-            <strong>Address:</strong> <mark>HAMZA COLONY </mark> Peshawar
-            Pakistan
-          </p>
-          <p><strong>Phone:</strong> 0370 1592952</p>
-          <p><strong>Email:</strong> aiderz.agency@gmail.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Hamza Colony, Peshawar, Pakistan</p>
+          <p><i class="fa-solid fa-phone"></i> 0370 1592952</p>
+          <p><i class="fa-solid fa-envelope"></i> aiderz.agency@gmail.com</p>
         </div>
       </div>
 
-      <!-- BOTTOM -->
       <div class="footer-bottom">
-        <p>Copyright © 2026 - AIDERZ Marketing Agency. All Rights Reserved.</p>
-
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i id="inst" class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-        </div>
+        <p>Copyright &copy; 2026 AIDERZ Marketing Agency. All Rights Reserved.</p>
+        
       </div>
 
-      <!-- BACK TO TOP -->
-      <button class="back-to-top" onclick="scrollToTop()">
-        <a href="#home"><i id="arrow" class="fa-solid fa-arrow-up"></i></a>
-      </button>
+      
     </footer>
-    <script>
-  function openMenu(){
-  document.getElementById("sidebar").classList.add("active");
-}
 
-function closeMenu(){
-  document.getElementById("sidebar").classList.remove("active");
-}
-</script>
+    <script src="script.js"></script>
   </body>
 </html>
