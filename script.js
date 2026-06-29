@@ -277,3 +277,39 @@ if (backToTop) {
   `;
   document.head.appendChild(style);
 })();
+
+  // Initialize EmailJS with your Public Key
+  emailjs.init("w3IopA_R4yiAJ2y5z");
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const btn = this.querySelector("button[type='submit']");
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+    emailjs.sendForm("service_ryacx4r", "template_os4m76a", this)
+      .then(() => {
+        btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sent Successfully!';
+        btn.style.background = "#28a745";
+        this.reset();
+
+        // Reset button after 4 seconds
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.style.background = "";
+          btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Submit Request';
+        }, 4000);
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Failed. Try Again';
+        btn.style.background = "#dc3545";
+
+        setTimeout(() => {
+          btn.style.background = "";
+          btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Submit Request';
+        }, 4000);
+      });
+  });

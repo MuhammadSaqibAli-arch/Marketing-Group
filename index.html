@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="Icon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
   <body>
 
@@ -216,80 +217,80 @@
             <h3>Book Free Consultation</h3>
             <p class="desc">We'd love to hear from you. Fill out the form and we'll get back to you shortly.</p>
 
-            <form id="contactForm">
-              <div class="form-row">
-                <div class="input-group">
-                  <label>Full Name *</label>
-                  <input type="text" placeholder="Your full name" required />
-                </div>
-                <div class="input-group">
-                  <label>Email Address *</label>
-                  <input type="email" placeholder="your@email.com" required />
-                </div>
-              </div>
+           <form id="contactForm">
+  <div class="form-row">
+    <div class="input-group">
+      <label>Full Name *</label>
+      <input type="text" name="full_name" placeholder="Your full name" required />
+    </div>
+    <div class="input-group">
+      <label>Email Address *</label>
+      <input type="email" name="email" placeholder="your@email.com" required />
+    </div>
+  </div>
 
-              <div class="form-row">
-                <div class="input-group">
-                  <label>WhatsApp Number *</label>
-                  <input type="text" placeholder="0301 2345678" required />
-                </div>
-                <div class="input-group">
-                  <label>Website URL</label>
-                  <input type="text" placeholder="www.yoursite.com" />
-                </div>
-              </div>
+  <div class="form-row">
+    <div class="input-group">
+      <label>WhatsApp Number *</label>
+      <input type="text" name="whatsapp" placeholder="0301 2345678" required />
+    </div>
+    <div class="input-group">
+      <label>Website URL</label>
+      <input type="text" name="website" placeholder="www.yoursite.com" />
+    </div>
+  </div>
 
-              <div class="form-row">
-                <div class="input-group">
-                  <label>Country *</label>
-                  <select required>
-                    <option disabled selected>Select Country</option>
-                    <option>Pakistan</option>
-                  </select>
-                </div>
-                <div class="input-group">
-                  <label>City *</label>
-                  <select required>
-                    <option disabled selected>Select City</option>
-                    <option>Karachi</option>
-                    <option>Lahore</option>
-                    <option>Islamabad</option>
-                    <option>Rawalpindi</option>
-                    <option>Peshawar</option>
-                    <option>Quetta</option>
-                    <option>Faisalabad</option>
-                    <option>Multan</option>
-                    <option>Hyderabad</option>
-                    <option>Sialkot</option>
-                    <option>Gujranwala</option>
-                    <option>Abbottabad</option>
-                  </select>
-                </div>
-              </div>
+  <div class="form-row">
+    <div class="input-group">
+      <label>Country *</label>
+      <select name="country" required>
+        <option disabled selected>Select Country</option>
+        <option>Pakistan</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label>City *</label>
+      <select name="city" required>
+        <option disabled selected>Select City</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+        <option>Rawalpindi</option>
+        <option>Peshawar</option>
+        <option>Quetta</option>
+        <option>Faisalabad</option>
+        <option>Multan</option>
+        <option>Hyderabad</option>
+        <option>Sialkot</option>
+        <option>Gujranwala</option>
+        <option>Abbottabad</option>
+      </select>
+    </div>
+  </div>
 
-              <div class="input-group">
-                <label>Service Required *</label>
-                <select required>
-                  <option disabled selected>Select a Service</option>
-                  <option>Graphic Designing</option>
-                  <option>Photography</option>
-                  <option>Videography</option>
-                  <option>Video Editing</option>
-                  <option>Web Development</option>
-                  <option>SEO</option>
-                </select>
-              </div>
+  <div class="input-group">
+    <label>Service Required *</label>
+    <select name="service" required>
+      <option disabled selected>Select a Service</option>
+      <option>Graphic Designing</option>
+      <option>Photography</option>
+      <option>Videography</option>
+      <option>Video Editing</option>
+      <option>Web Development</option>
+      <option>SEO</option>
+    </select>
+  </div>
 
-              <div class="input-group">
-                <label>Your Message / Inquiry *</label>
-                <textarea rows="4" placeholder="Tell us about your project..." required></textarea>
-              </div>
+  <div class="input-group">
+    <label>Your Message / Inquiry *</label>
+    <textarea name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+  </div>
 
-              <button type="submit" class="btn">
-                <i class="fa-solid fa-paper-plane"></i>
-                Submit Request
-              </button>
-            </form>
+  <button type="submit" class="btn">
+    <i class="fa-solid fa-paper-plane"></i>
+    Submit Request
+  </button>
+</form>
           </div>
         </div>
       </div>
